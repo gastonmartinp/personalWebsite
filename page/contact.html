@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Contacto</title>
+
+    <!--Tipografía de Google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="../multimedia/favicon.png">
+</head>
+
+<body>
+    <header class="banner" id="top">
+        <nav class="nav">
+            <a href="../index.html"><img class="favicon"
+            src="../multimedia/favicon.png" 
+            alt="Icono"></a>
+                <ul class="menuSup">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="./about.html">Sobre mí</a></li>
+                    <li><a href="./works.html">Trabajos</a></li>
+                    <li><a href="./contact.html">Contacto</a></li>
+                    <li><a href="./resume.html">Curriculum</a></li>
+                </ul>
+        </nav>
+    </header>
+    <h1>Contacto -</h1>
+    <br>
+    <!--Formulario de contacto-->
+    <form action="">
+        <fieldset>
+            <legend><strong>¿Tenés un proyecto o idea? Conversemos.</strong></legend>
+            <br>
+            <label for="name">Tu nombre</label>
+            <input type="text" name="name" id="name" placeholder="Ingresa tu nombre" required>
+            <!--<br> solo por ahora-->
+            <br>
+            <br>
+            <label for="mail">Mail de contacto</label>
+            <input type="email" name="mail" id="mail" placeholder="Ingresa tu mail" required>
+            <br>
+            <br>
+            <label for="num">Teléfono de contacto</label>
+            <input type="number" name="num" id="num" placeholder="1234567890" required>
+            <br>
+            <br>
+            <label for="type">Tipo de proyecto</label>
+            <select name="type" id="type">
+                <option value="">Selecciona tu proyecto</option>
+                <option value="appAndroid">App Android</option>
+                <option value="desktop">Sitio web desktop</option>
+                <option value="mobile">Sitio web mobile</option>
+                <option value="responsive">Sitio web responsive</option>
+            </select>
+            <br>
+            <br>
+            <label for="presupuesto"><strong>Presupuesto</strong></label>
+            <br>
+            <br>
+            <input type="radio" name="presupuesto"> menor a 1000 USD
+            <input type="radio" name="presupuesto"> mayor a 1000 USD
+            <input type="radio" name="presupuesto"> Otro
+            <br>
+            <br>
+            <label for="comment">Comentario adicional</label>
+            <br>
+            <textarea name="comentario" id="comentario" cols="30" rows="10" maxlength="50"></textarea>
+            <br>
+            <br>
+            <input type="submit" value="Enviar formulario">
+            <input type="reset" name="" value="Limpiar formulario">
+        </fieldset>
+    </form>
+
+
+
+    <!-- inicio de footer -->
+    <footer>
+        <p class="top"><a href="#top">Back to top</a></p>
+
+        <div class="footerLinks">
+            <ul>
+                <li><a href="https://wa.me/541139229068?text=Hola Gastón, ¿cómo estás?">WhatsApp</a></li>
+                <li><a href="https://www.linkedin.com/in/gastonmartinperez/" target="_blank">LinkedIn</a></li>
+                <li><a href="https://www.instagram.com/gastonmartinp/" target="_blank">instagram</a></li>
+            </ul>
+        </div>
+        
+        <div class="copyright">
+            <p>© 2022 Todos los derechos reservados</p>
+        </div>
+
+    </footer>
+</body>
+
+</html>
