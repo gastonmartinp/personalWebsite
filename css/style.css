@@ -131,4 +131,12 @@ footer{
     .margin-bot {
       margin-bottom: 2px;
     }
+
+    .bigDescription {
+        font-size: 3rem;
+    }
+
+    .elementCounter {
+        flex-direction: column;
+    }
    }
