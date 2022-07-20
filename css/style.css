@@ -89,6 +89,37 @@ body {
     transform: scale(1.1,1.1);
 }
 
+/* animation */
+
+.animacion{
+    font-size: medium;
+    /* name */
+    animation-name: ContactMe;
+    /* veces que se ejecuta */
+    animation-iteration-count: infinite;
+    /* Duration */
+    animation-duration: 4s;
+    /* Delay */
+    animation-delay: 1s;
+}
+
+@keyframes ContactMe {
+    0%{
+        color: #000000;
+    }
+    25%{
+        color: #111C7C;
+    }
+    50%{
+        color: #939292;
+    }
+    75%{
+        color: #111C7C;
+    }
+    100%{
+        color: #000000;
+    }
+}
 /*---------FOOTER---------*/
 
 footer{
