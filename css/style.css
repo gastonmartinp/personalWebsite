@@ -16,9 +16,14 @@
     justify-content: space-between;
 }
 
+
 nav {
     padding: 20px;
     background-color: rgb(196, 193, 193);
+}
+
+.favicon{
+    height: 25px;    
 }
 
 
