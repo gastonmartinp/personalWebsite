@@ -65,21 +65,73 @@
 
     </header>
 
-    <section class="container-fluid">     <!-- Conteiner Bootstrap -->
-        <div class="container">
-            <div class="row">
-              <div class="col">
-                Column
-              </div>
-              <div class="col">
-                Column
-              </div>
-              <div class="col">
-                Column
-              </div>
-            </div>
+    <!--CV-->
+
+    <div id="accordion">
+      <div class="card">
+        <div class="card-header" id="headingOne">
+          <h5 class="mb-0">
+            <button class="btn btn-primary collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Sobre mi
+            </button>
+          </h5>
+        </div>
+    
+        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+          <div class="card-body">
+            Soy Product Owner con formación en
+            Ingeniería Industrial y ciencia de datos.
+            Cuento con vasta experiencia en Agile
+            (Scrum, Kanban, Design Thinking), liderazgo
+            de equipos multidisciplinarios, planeamiento
+            e ingeniería. Mi compromiso se basa en
+            crear productos digitales con enfoque data driven, que ofrezcan soluciones reales
+            centradas en la experiencia de usuario y en
+            el valor para el negocio.
           </div>
-    </section>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingTwo">
+          <h5 class="mb-0">
+            <button class="btn btn-primary collapsed" data-toggle="collapse show" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+              Voluntariado
+            </button>
+          </h5>
+        </div>
+        <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordion">
+          <div class="card-body">
+            Asesor de Tecnologías de la Información
+            Universidad Nacional Arturo Jauretche
+            <p>Marzo 2020 - Diciembre 2020</p> 
+            Asesoramiento a estudiantes y profesores de la
+            Universidad en la implementación y uso de
+            herramientas IT, como consecuencia del cambio
+            de modalidad de estudio, de presencial a virtual,
+            debido al Coronavirus.            
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingThree">
+          <h5 class="mb-0">
+            <button class="btn btn-primary collapsed" data-toggle="collapse show" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+              Formación académica
+            </button>
+          </h5>
+        </div>
+        <div id="collapseThree" class="collapse show" aria-labelledby="headingThree" data-parent="#accordion">
+          <div class="card-body">
+            Formado en Ingeniería indutrial en la Universidad Tecnológica Nacional.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Fin CV-->
+
+
+
 
     <!-- inicio de footer -->
     <footer>
