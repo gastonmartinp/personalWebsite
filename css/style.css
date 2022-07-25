@@ -53,23 +53,10 @@ body {
     font-size: 19px;
 }
 
-.bigDescriptionIndex {
-    font-size: 3rem;
-    color: #111C7C;
-    font: bolder;
-    padding-left: 3rem;
-    padding-right: 3rem;
-}
-
-.bigDescriptionAbout {
+.bigDescription {
     font-size: 4rem;
     color: #111C7C;
     font: bolder;
-}
-
-.SecondaryDescriptionIndex{
-    padding-left: 3rem;
-    padding-right: 3rem;
 }
 
 .underline{
