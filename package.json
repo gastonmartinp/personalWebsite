@@ -1,0 +1,19 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "<h1> personalWebsite </h1>\r <p>In this repository I create my personal website</p>",
+  "main": "typed.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gastonmartinp/personalWebsite.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gastonmartinp/personalWebsite/issues"
+  },
+  "homepage": "https://github.com/gastonmartinp/personalWebsite#readme"
+}
