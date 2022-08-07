@@ -1,4 +1,6 @@
-* {
+@import "variables";
+
+*{
     margin: 0;
     padding: 0;
     box-sizing: content-box;
@@ -6,10 +8,6 @@
 }
 
 /*  --------Header--------  */
-
-.banner {
-    background-color: rgba(229, 229, 229, 0.854);
-}
 
 .nav{
     display: flex;
@@ -45,7 +43,7 @@ nav {
 
 body {
     line-height: 1.2;
-    background-color: rgb(232, 232, 232);
+    background-color: $color-primary;
 }
 
 
@@ -137,7 +135,7 @@ body {
 /*---------FOOTER---------*/
 
 footer{
-    background-color: rgb(210, 210, 210);
+    background-color: $color-accent;
 }
 
 .top {

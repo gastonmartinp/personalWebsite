@@ -1,3 +1,5 @@
+@charset "UTF-8";
+/* Variable para estandarizar colores y tamaños */
 * {
   margin: 0;
   padding: 0;
@@ -5,9 +7,6 @@
   font-family: 'Roboto', sans-serif; }
 
 /*  --------Header--------  */
-.banner {
-  background-color: rgba(229, 229, 229, 0.854); }
-
 .nav {
   display: flex;
   justify-content: space-between; }

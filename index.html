@@ -28,6 +28,7 @@
 </head>
 
 <body>
+  <!--Header + NavBar (Bootstrap)-->
   <header class="banner" id="top">
     <nav class="navbar navbar-expand-lg bg-light">
       <div class="container-fluid">
@@ -58,10 +59,15 @@
       </div>
     </nav>
   </header>
+
+  <!--Product Animation-->
+  <section id="hero">
+    <div class="heroContent">
+      <h1><span class="typed-words"></span></h1>
+    </div>
+  </section>
+
   <div>
-    <h1>
-      <span class=".typed-words"></span>
-    </h1>
     <!--class="titleImportant">Lead Product Owner-->
     <p class="bigDescription">Enfocado en crear productos digitales de excelencia y contribuir con la revolución
       Startup en LATAM.
@@ -70,11 +76,10 @@
       Product Owner en el sitio web de Coderhouse, donde contribuí con la democratización de la educación y revolución
       en la manera de aprender.</p>
 
-    <a href="https://wa.me/541139229068?text=Hola Gastón, ¿cómo estás?" 
-    class="btn btn-primary btn-md" 
-    role="button">Programar una reunión</a>
-
+    <a href="https://wa.me/541139229068?text=Hola Gastón, ¿cómo estás?" class="btn btn-primary btn-md"
+      role="button">Programar una reunión</a>
   </div>
+
   <hr>
 
 
@@ -93,57 +98,46 @@
         </div>
       </div>
     </div>
-
   </div>
-
-
-
 
   <!--Carrusel-->
 
-<section>
-  <h1>Sitios en los cuales trabajé</h1>
-
-  
-  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-        aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-        aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-        aria-label="Slide 3"></button>
+  <section>
+    <h1>Sitios en los cuales trabajé</h1>
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./multimedia/HomeRappi.png" class="d-block w-100" alt="Rappi">
+        </div>
+        <div class="carousel-item">
+          <img src="./multimedia/HomeCoder.png" class="d-block w-100" alt="Coderhouse">
+        </div>
+        <div class="carousel-item">
+          <img src="./multimedia/HomeStarter.png" class="d-block w-100" alt="Starter">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="./multimedia/HomeRappi.png" class="d-block w-100" alt="Rappi">
-      </div>
-      <div class="carousel-item">
-        <img src="./multimedia/HomeCoder.png" class="d-block w-100" alt="Coderhouse">
-      </div>
-      <div class="carousel-item">
-        <img src="./multimedia/HomeStarter.png" class="d-block w-100" alt="Starter">
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-      data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-      data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-
-</section>
-
-
-  
+  </section>
 
   <!--Fin carrusel-->
-
   <div>
     <h1 class="animacion">¿Tenés algún proyecto o idea? Contactame.</h1>
     <p class="bigDescription">Actualmente vivo en Buenos Aires, Argentina, pero trabajo con personas al rededor de
@@ -167,14 +161,15 @@
     </div>
   </footer>
 
-  <!--Animated typed
-    <script src="typed.js"></script> -->
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
 
-
-  <!--Animated typed -->
+  <!--Animated typed-->
   <script>
-    var typed = new Typed('.typed-words', {
-      strings: ["Product Owner", "Product Manager"],
+    var typed = new Typed(".typed-words", {
+      strings: ["Product Lead", "Product Manager"],
       typeSpeed: 80,
       backSpeed: 80,
       backDelay: 4000,
@@ -183,11 +178,6 @@
       showCursor: true
     });
   </script>
-
-  <!-- JavaScript Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-    crossorigin="anonymous"></script>
 </body>
 
 </html>
