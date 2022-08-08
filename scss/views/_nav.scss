@@ -1,0 +1,13 @@
+/*---------NAVBAR---------*/
+
+nav {
+    padding: 20px;
+    background-color: $color-accent;
+    .nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    .favicon{
+        height: 25px;    
+    }
+}

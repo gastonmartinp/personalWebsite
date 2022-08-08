@@ -1,33 +1,48 @@
-@charset "UTF-8";
-/* Variable para estandarizar colores y tamaños */
+/*----------------COLORS-------------------*/
+/*----------------FONTS-------------------*/
+/*first variabls*/
+/*---------NAVBAR---------*/
+nav {
+  padding: 20px;
+  background-color: #d2d2d2; }
+  nav .nav {
+    display: flex;
+    justify-content: space-between; }
+  nav .favicon {
+    height: 25px; }
+
+/*estilos del navbar*/
+/*---------FOOTER---------*/
+footer {
+  background-color: #d2d2d2; }
+  footer .footerLinks {
+    text-align: center; }
+    footer .footerLinks ul {
+      padding: 0;
+      list-style-type: none;
+      margin: 0; }
+    footer .footerLinks li {
+      display: inline-block;
+      padding: 1rem; }
+    footer .footerLinks a {
+      color: #000000;
+      text-decoration: none;
+      font-size: 13px; }
+  footer .copyright {
+    text-align: center; }
+    footer .copyright p {
+      margin: 0;
+      color: #939292;
+      font-size: 11px; }
+  footer .top {
+    text-align: right; }
+
+/*estilos del footer*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: content-box;
   font-family: 'Roboto', sans-serif; }
-
-/*  --------Header--------  */
-.nav {
-  display: flex;
-  justify-content: space-between; }
-
-nav {
-  padding: 20px;
-  background-color: #c4c1c1; }
-
-.favicon {
-  height: 25px; }
-
-.menuSup {
-  list-style-type: none;
-  text-align: center; }
-
-.menuSup li {
-  display: inline-block; }
-
-.menuSup a {
-  text-decoration: none;
-  padding: 1rem; }
 
 /*  --------BODY---------  */
 body {
@@ -100,38 +115,6 @@ body {
 .btn {
   background-color: #111C7C; }
 
-/*---------FOOTER---------*/
-footer {
-  background-color: #d2d2d2; }
-
-.top {
-  text-align: right; }
-
-.footerLinks {
-  text-align: center; }
-
-.footerLinks ul {
-  padding: 0;
-  list-style-type: none;
-  margin: 0; }
-
-.footerLinks li {
-  display: inline-block;
-  padding: 1rem; }
-
-.footerLinks a {
-  color: #000000;
-  text-decoration: none;
-  font-size: 13px; }
-
-.copyright {
-  text-align: center; }
-
-.copyright p {
-  margin: 0;
-  color: #939292;
-  font-size: 11px; }
-
 /*---------MEDIA QUERY---------*/
 @media only screen and (max-width: 768px) {
   .wrapper {
@@ -139,6 +122,6 @@ footer {
   .margin-bot {
     margin-bottom: 2px; }
   .bigDescription {
-    font-size: 3rem; }
+    font-size: 2rem; }
   .elementCounter {
     flex-direction: column; } }

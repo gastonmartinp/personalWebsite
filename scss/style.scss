@@ -1,42 +1,13 @@
-@import "variables";
-
+@import "utilities/variables"; /*first variabls*/
+@import "views/nav"; /*estilos del navbar*/
+@import "views/footer"; /*estilos del footer*/
+@import "utilities/mediaqueries";
+ 
 *{
     margin: 0;
     padding: 0;
     box-sizing: content-box;
     font-family: 'Roboto', sans-serif;
-}
-
-/*  --------Header--------  */
-
-.nav{
-    display: flex;
-    justify-content: space-between;
-}
-
-
-nav {
-    padding: 20px;
-    background-color: rgb(196, 193, 193);
-}
-
-.favicon{
-    height: 25px;    
-}
-
-
-.menuSup {
-    list-style-type: none;
-    text-align: center;
-}
-
-.menuSup li {
-    display: inline-block;
-}
-
-.menuSup a {
-    text-decoration: none;
-    padding: 1rem;
 }
 
 /*  --------BODY---------  */
@@ -52,8 +23,8 @@ body {
 }
 
 .bigDescription {
-    font-size: 4rem;
-    color: #111C7C;
+    font-size: $font-big-description;
+    color: $color-secondary;
     font: bolder;
 }
 
@@ -128,62 +99,24 @@ body {
 /* Animation Library */
 
 .btn {
-    background-color: #111C7C;
+    background-color: $color-secondary;
 }
 
+/*---------MEDIA QUERY---------*/
 
-/*---------FOOTER---------*/
-
-footer{
-    background-color: $color-accent;
-}
-
-.top {
-    text-align: right;
-}
-
-.footerLinks {
-    text-align: center;
- }
- .footerLinks ul {
-     padding: 0;
-     list-style-type: none;
-     margin: 0;
- }
- .footerLinks li {
-     display: inline-block;
-     padding: 1rem;
- }
- .footerLinks a {
-     color: #000000;
-     text-decoration: none;
-     font-size: 13px;
- }
- .copyright {
-     text-align: center;
- }
- 
- .copyright p {
-     margin: 0;
-     color: #939292;
-     font-size: 11px;
- }
-
- /*---------MEDIA QUERY---------*/
-
- @media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     .wrapper {
-      display: block;
+        display: block;
     }
     .margin-bot {
-      margin-bottom: 2px;
+        margin-bottom: 2px;
     }
 
     .bigDescription {
-        font-size: 3rem;
+        font-size: 2rem;
     }
 
     .elementCounter {
         flex-direction: column;
     }
-   }
+}
