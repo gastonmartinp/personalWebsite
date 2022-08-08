@@ -88,6 +88,9 @@ body {
   transform: scale(1.1, 1.1); }
 
 /* animation */
+.typed-words {
+  font-size: 24px; }
+
 .animacion {
   font-size: medium;
   /* name */
