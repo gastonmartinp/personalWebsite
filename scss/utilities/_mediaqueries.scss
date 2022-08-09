@@ -1,0 +1,18 @@
+/*---------MEDIA QUERY---------*/
+
+@media only screen and (max-width: 768px) {
+    .wrapper {
+        display: block;
+    }
+    .margin-bot {
+        margin-bottom: 2px;
+    }
+
+    .bigDescription {
+        font-size: 2rem;
+    }
+
+    .elementCounter {
+        flex-direction: column;
+    }
+}

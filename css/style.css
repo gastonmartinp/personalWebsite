@@ -1,5 +1,6 @@
 /*----------------COLORS-------------------*/
 /*----------------FONTS-------------------*/
+/*-operador scss-*/
 /*first variabls*/
 /*---------NAVBAR---------*/
 nav {
@@ -41,6 +42,30 @@ footer {
 /* Animation Library */
 .btn {
   background-color: #111C7C; }
+
+.btn-penalty {
+  background-color: aqua; }
+
+/* MAP = Lista de elementos */
+.btn-penalty {
+  background-color: green; }
+
+.btn-rappi {
+  background-color: #fc5959; }
+
+.btn-coder {
+  background-color: grey; }
+
+/*---------MEDIA QUERY---------*/
+@media only screen and (max-width: 768px) {
+  .wrapper {
+    display: block; }
+  .margin-bot {
+    margin-bottom: 2px; }
+  .bigDescription {
+    font-size: 2rem; }
+  .elementCounter {
+    flex-direction: column; } }
 
 * {
   margin: 0;
@@ -117,14 +142,3 @@ body {
     color: #111C7C; }
   100% {
     color: #000000; } }
-
-/*---------MEDIA QUERY---------*/
-@media only screen and (max-width: 768px) {
-  .wrapper {
-    display: block; }
-  .margin-bot {
-    margin-bottom: 2px; }
-  .bigDescription {
-    font-size: 2rem; }
-  .elementCounter {
-    flex-direction: column; } }
