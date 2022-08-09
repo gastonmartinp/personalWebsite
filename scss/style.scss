@@ -1,6 +1,7 @@
 @import "utilities/variables"; /*first variabls*/
 @import "views/nav"; /*estilos del navbar*/
 @import "views/footer"; /*estilos del footer*/
+@import "components/button";
 @import "utilities/mediaqueries";
  
 *{
@@ -98,12 +99,6 @@ body {
     100%{
         color: #000000;
     }
-}
-
-/* Animation Library */
-
-.btn {
-    background-color: $color-secondary;
 }
 
 /*---------MEDIA QUERY---------*/
