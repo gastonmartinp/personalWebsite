@@ -56,6 +56,9 @@ footer {
 .btn-coder {
   background-color: grey; }
 
+.btn-resume {
+  background-color: #fc5959; }
+
 /*---------MEDIA QUERY---------*/
 @media only screen and (max-width: 768px) {
   .wrapper {

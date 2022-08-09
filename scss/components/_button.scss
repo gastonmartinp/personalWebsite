@@ -20,3 +20,7 @@ $empresas:(
         background-color: #{$color};
     }
 }
+
+.btn-resume{
+    background-color: map-get($map: $empresas, $key: rappi);
+}
