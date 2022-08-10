@@ -1,0 +1,15 @@
+/* MIXIN */
+
+@mixin flexbox($flex-direction, $justify, $align) {
+    flex-direction: $flex-direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+.card{
+    @include flexbox(column,center,center)
+}
+
+.img{
+    @include flexbox(row,flex-start,flex-end)
+}
