@@ -6,4 +6,4 @@ $color-accent: rgb(210, 210, 210);
 /*----------------FONTS-------------------*/
 $font-size: 16px;
 $font-title: $font-size+3; /*-operador scss-*/
-$font-big-description: 4rem;   
+$font-big-description: $font-size*3;   
