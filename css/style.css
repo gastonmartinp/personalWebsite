@@ -79,13 +79,24 @@ footer {
 
 /*  --------BODY---------  */
 body {
-  line-height: 1.3;
+  line-height: 1.2;
   background-color: #e8e8e8; }
+
+.heroContent {
+  margin: 0 auto;
+  width: 80vw; }
+
+.main {
+  margin: 0 auto;
+  width: 80vw; }
 
 .bigDescription {
   font-size: 48px;
   color: #111C7C;
   font: bolder; }
+
+.name {
+  color: #0f3fba; }
 
 .normalText, .normalText--v2 {
   font-size: 16px;
