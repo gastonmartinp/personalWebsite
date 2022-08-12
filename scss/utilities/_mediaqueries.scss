@@ -9,10 +9,17 @@
     }
 
     .bigDescription {
-        font-size: 2rem;
+        font-size: 10px;
     }
+}
 
-    .elementCounter {
-        flex-direction: column;
+@media (max-width: 768px) {
+    .experiences {
+        .wrapper{
+            display: block;
+        }
+        .margin-bot{
+            margin-bottom: 2px;
+        }
     }
 }

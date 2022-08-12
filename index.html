@@ -80,26 +80,22 @@
       role="button">Programar una reunión</a>
   </div>
 
-  <hr>
-
-
-  <div class="container-fluid">
-    <!-- Conteiner Bootstrap -->
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          +10 proyectos
-        </div>
-        <div class="col">
-          +2000 historias de usuario
-        </div>
-        <div class="col">
-          +20 charlas
-        </div>
-      </div>
+  <!--experiencias-->
+  <div class="experiences">
+    <div class="experience-card">  
+      <span id="cont1">0</span>
+      <span class="experience-text">+ proyectos finalizados</span>
+    </div>
+    <div class="experience-card">  
+      <span id="cont2">0</span>
+      <span class="experience-text">+ charlas y conferencias</span>
+    </div>
+    <div class="experience-card">  
+      <span id="cont3">0</span>
+      <span class="experience-text">+ años de experiencia</span>
     </div>
   </div>
-
+  
   <!--Carrusel-->
 
   <section>
@@ -181,6 +177,39 @@
       loop: true,
       showCursor: true
     });
+  </script>
+
+  <script>
+    let cont1=document.getElementById('cont1'),
+        cont2=document.getElementById('cont2'),
+        cont3=document.getElementById('cont3')
+    let cant1=0,cant2=0,cant3=0,
+    tiem=20
+    
+    let tiempo1 = setInterval(() => {
+      cont1.textContent=cant1+=1
+      if(cant1===100)
+      {
+        clearInterval(tiempo1)
+      }
+    },`${tiem}`);
+
+    let tiempo2 = setInterval(() => {
+      cont2.textContent=cant2+=1
+      if(cant2===20)
+      {
+        clearInterval(tiempo2)
+      }
+    },100);
+
+    let tiempo3 = setInterval(() => {
+      cont3.textContent=cant3+=1
+      if(cant3===9)
+      {
+        clearInterval(tiempo3)
+      }
+    },200);
+
   </script>
 </body>
 
