@@ -10,7 +10,8 @@ nav {
     display: flex;
     justify-content: space-between; }
   nav .favicon {
-    height: 25px; }
+    height: 25px;
+    margin-top: 8px; }
 
 /*estilos del navbar*/
 /*---------FOOTER---------*/
