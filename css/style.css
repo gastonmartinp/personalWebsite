@@ -104,6 +104,11 @@ body {
 .name {
   color: #0f3fba; }
 
+.works-title {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px; }
+
 .normalText, .normalText--v2 {
   font-size: 16px;
   font: caption;
