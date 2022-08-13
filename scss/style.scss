@@ -4,6 +4,7 @@
 @import "components/button";
 @import "components/card";
 @import "components/carousel";
+@import "layout/dividers";
 @import "utilities/mediaqueries";
  
 *{
@@ -23,7 +24,7 @@ body {
 .heroContent{
     margin: 0 auto;
     width: 80vw;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
 }
 
 .main{
@@ -35,6 +36,7 @@ body {
         font-size: $font-big-description;
         color: $color-secondary;
         font: bolder;
+        font-weight: 600;
     }
         .name{
             color:$color-third
@@ -49,8 +51,12 @@ body {
 
 .normalText{
     font-size: $font-size;
-    font: caption;
     text-decoration: dashed;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 500px
+    
 }
 
 .normalText--v2{
@@ -67,7 +73,7 @@ body {
 
 
 .typed-words{
-    font-size: 28px;
+    font-size: 20px;
 }
 
 .animacion{
