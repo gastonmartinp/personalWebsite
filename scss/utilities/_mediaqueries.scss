@@ -11,6 +11,12 @@
     .bigDescription {
         font-size: 10px;
     }
+
+    .copy{
+        display: grid;
+        grid-template-columns: 1fr;
+
+    }
 }
 
 @media (max-width: 768px) {

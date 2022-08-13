@@ -5,8 +5,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="keywords" content="portfolio, personal, product, producto, product manager, product lead, product owner, gaston perez, rappi, coderhouse, penalty, florencio varela, buenos aires, argentina">
-  <meta name="description" content="Te doy la bienvenida a mi sitio web personal. En este espacio, podrás conocer mis habilidades, conocimientos y experiencias junto con mi historia.">
+  <meta name="keywords"
+    content="portfolio, personal, product, producto, product manager, product lead, product owner, gaston perez, rappi, coderhouse, penalty, florencio varela, buenos aires, argentina">
+  <meta name="description"
+    content="Te doy la bienvenida a mi sitio web personal. En este espacio, podrás conocer mis habilidades, conocimientos y experiencias junto con mi historia.">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
   <!-- CSS only -->
@@ -69,7 +71,8 @@
   </section>
 
   <div class="main">
-    <p class="bigDescription">Me llamo <span class="name">Gastón Pérez</span>. Soy una persona dedicada a crear productos digitales de excelencia y contribuir con la revolución
+    <p class="bigDescription">Me llamo <span class="name">Gastón Pérez</span>. Soy una persona dedicada a crear
+      productos digitales de excelencia y contribuir con la revolución
       Startup en <span class="name">LATAM</span>.
     <p class="normalText">Actualmente trabajo como Product Lead en Rappi, dentro del Portal de
       Restaurantes, donde me dedico a crear un producto útil y con valor para nuestros clientes. Antes, trabajé como
@@ -77,31 +80,52 @@
       en la manera de aprender.</p>
 
     <a href="https://wa.me/541139229068?text=Hola Gastón, ¿cómo estás?" class="btn btn-primary btn-md"
-      role="button">Programar una reunión</a>
+      role="button" target="_blank">Programar una reunión</a>
   </div>
 
   <!--experiencias-->
   <div class="experiences">
-    <div class="experience-card">  
+    <div class="experience-card">
       <span id="cont1">0</span>
       <span class="experience-text">+ proyectos finalizados</span>
     </div>
-    <div class="experience-card">  
+    <div class="experience-card">
       <span id="cont2">0</span>
       <span class="experience-text">+ charlas y conferencias</span>
     </div>
-    <div class="experience-card">  
+    <div class="experience-card">
       <span id="cont3">0</span>
       <span class="experience-text">+ años de experiencia</span>
     </div>
   </div>
-  
-  <!--Carrusel-->
 
+
+  <!--Cards-->
   <section>
     <h2 class="works-title">
-     <span class="name">Sitios en los cuales trabajé</span>
+      <span class="name">Sitios en los cuales trabajé</span>
     </h2>
+  </section>
+
+  <div class="contenedor-works">
+    
+    <div class="card-works">
+      <div class="copy" style="background-image: url('./multimedia/Coder_Logo_Black.svg');">
+        <a href="https://www.coderhouse.com" target="_blank" class="fill-div"></a>
+      </div>
+      <div class="copy" style="background-image: url('./multimedia/Rappi_Logo.png');">
+        <a href="https://www.rappi.com.ar/" target="_blank" class="fill-div"></a>
+      </div>
+      <div class="copy" style="background-image: url('./multimedia/Logo_Mobius.png');" >
+        <a href="https://www.behance.net/gallery/117446845/Moebius-Presentacion-Final" target="_blank" class="fill-div"></a>
+      </div>
+    </div>
+
+  </div>
+
+
+  <!--Carrusel
+
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
@@ -134,14 +158,19 @@
       </button>
     </div>
   </section>
+  -->
 
   <!--Fin carrusel-->
   <div class="main">
     <h1 class="animacion">¿Tenés algún proyecto o idea? Contactame.</h1>
-    <p class="bigDescription">Actualmente vivo en <span class="name">Buenos Aires, Argentina</span>, pero trabajo con personas al rededor de
-      <span class="name">todo el globo</span>.</p>
-    <p class="normalText--v2">Nací en la localidad de Florencio Varela, ubicada en el conurbano bonaerense de Argentina. Allí crecí, y luego continué mis estudios académicos en Avellaneda. Hoy en día, 
-      trabajo con personas de Buenos Aires pero también de Colombia, Perú, Chile, Uruguay, Ecuador, Brasil, Canadá, India, y más. 
+    <p class="bigDescription">Actualmente vivo en <span class="name">Buenos Aires, Argentina</span>, pero trabajo con
+      personas al rededor de
+      <span class="name">todo el globo</span>.
+    </p>
+    <p class="normalText--v2">Nací en la localidad de Florencio Varela, ubicada en el conurbano bonaerense de Argentina.
+      Allí crecí, y luego continué mis estudios académicos en Avellaneda. Hoy en día,
+      trabajo con personas de Buenos Aires pero también de Colombia, Perú, Chile, Uruguay, Ecuador, Brasil, Canadá,
+      India, y más.
     </p>
   </div>
 
@@ -151,7 +180,7 @@
 
     <div class="footerLinks">
       <ul>
-        <li><a href="https://wa.me/541139229068?text=Hola Gastón, ¿cómo estás?">WhatsApp</a></li>
+        <li><a href="https://wa.me/541139229068?text=Hola Gastón, ¿cómo estás?" target="_blank">WhatsApp</a></li>
         <li><a href="https://www.linkedin.com/in/gastonmartinperez/" target="_blank">LinkedIn</a></li>
         <li><a href="https://www.instagram.com/gastonmartinp/" target="_blank">instagram</a></li>
       </ul>
@@ -171,7 +200,7 @@
   <script src="js/typed.js"></script>
   <script>
     var typed = new Typed(".typed-words", {
-      strings: ["Product Lead", "Product Manager","Product Owner"],
+      strings: ["Product Lead", "Product Manager", "Product Owner"],
       typeSpeed: 80,
       backSpeed: 80,
       backDelay: 500,
@@ -182,35 +211,32 @@
   </script>
 
   <script>
-    let cont1=document.getElementById('cont1'),
-        cont2=document.getElementById('cont2'),
-        cont3=document.getElementById('cont3')
-    let cant1=0,cant2=0,cant3=0,
-    tiem=20
-    
+    let cont1 = document.getElementById('cont1'),
+      cont2 = document.getElementById('cont2'),
+      cont3 = document.getElementById('cont3')
+    let cant1 = 0, cant2 = 0, cant3 = 0,
+      tiem = 20
+
     let tiempo1 = setInterval(() => {
-      cont1.textContent=cant1+=1
-      if(cant1===100)
-      {
+      cont1.textContent = cant1 += 1
+      if (cant1 === 100) {
         clearInterval(tiempo1)
       }
-    },`${tiem}`);
+    }, `${tiem}`);
 
     let tiempo2 = setInterval(() => {
-      cont2.textContent=cant2+=1
-      if(cant2===20)
-      {
+      cont2.textContent = cant2 += 1
+      if (cant2 === 20) {
         clearInterval(tiempo2)
       }
-    },100);
+    }, 100);
 
     let tiempo3 = setInterval(() => {
-      cont3.textContent=cant3+=1
-      if(cant3===9)
-      {
+      cont3.textContent = cant3 += 1
+      if (cant3 === 9) {
         clearInterval(tiempo3)
       }
-    },200);
+    }, 200);
 
   </script>
 </body>

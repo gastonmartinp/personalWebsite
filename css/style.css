@@ -73,6 +73,29 @@ footer {
   justify-content: flex-start;
   align-items: flex-end; }
 
+.card-works {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0 auto;
+  width: 70vw;
+  padding-top: 3rem;
+  padding-bottom: 3rem; }
+
+.copy {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 8rem; }
+
+.copy:hover {
+  transform: scale(1.1, 1.1); }
+
+a.fill-div {
+  display: block;
+  height: 100%;
+  width: 100%;
+  text-decoration: none; }
+
 /*---------MEDIA QUERY---------*/
 @media only screen and (max-width: 768px) {
   .wrapper {
@@ -80,7 +103,10 @@ footer {
   .margin-bot {
     margin-bottom: 2px; }
   .bigDescription {
-    font-size: 10px; } }
+    font-size: 10px; }
+  .copy {
+    display: grid;
+    grid-template-columns: 1fr; } }
 
 @media (max-width: 768px) {
   .experiences .wrapper {
