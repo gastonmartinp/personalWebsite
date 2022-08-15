@@ -96,8 +96,6 @@ body {
     width: 80vw;
     margin: 0 auto;
     border-radius: 10px;
-    
-}
     .experience-card{
         display: grid;
         text-align: center;
@@ -107,15 +105,14 @@ body {
         font-size: 59px;
         font-weight: 590;
         line-height: 1;
-    }
-
         .experience-text{
             text-align: center;
             font-size: 19px;
             font-weight: 400;
             line-height: 2.5;
         }
-
+    }
+}
     
 
 @keyframes ContactMe {

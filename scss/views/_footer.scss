@@ -5,66 +5,55 @@ footer {
     padding: 10px 0px;
     background-color: $color-accent;
     margin-top: 5rem;
-
-    .container-footer {
+    .container {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         max-width: 1050px;
         margin: auto;
-        margin-top: 10px;
-
-        .logo {
-            img {
-                width: 50px;
+        margin-top: 10px;      
+        &__box {
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            h2 {
+                margin-bottom: 10px;
+                color: #343434;
+                font-weight: 600;
+                font-size: 20px;
             }
-        }
-
-        .terms {
-            max-width: 350px;
-            margin-top: 20px;
-            font-weight: 500;
-            color: #343434;
-            font-size: 14px;
-
-            p{
-                .top{
+            a {
+                margin-top: 8px;
+                color: $color-third;
+                font-size: 14px;
+                :hover {
+                    opacity: 0.7;
+                }
+                .fab {
                     font-size: 20px;
-                    background-color: aliceblue;
+                    margin-right: 2px;
+                }
+            }
+            &--logo {
+                img {
+                    width: 50px;
+                }
+            }
+            &--terms {
+                max-width: 350px;
+                margin-top: 20px;
+                font-weight: 200;
+                color: #343434;
+                font-size: 14px;
+                p{
+                    .top{
+                        font-size: 20px;
+                        background-color: aliceblue;
+                    }
                 }
             }
         }
-        
     }
-
-    .box-footer {
-        display: flex;
-        flex-direction: column;
-        padding: 10px;
-
-        h2 {
-            margin-bottom: 10px;
-            color: #343434;
-            font-weight: 600;
-            font-size: 20px;
-        }
-
-        a {
-            margin-top: 8px;
-            color: $color-third;
-            font-size: 14px;
-
-            :hover {
-                opacity: 0.7;
-            }
-
-            .fab {
-                font-size: 20px;
-                margin-right: 2px;
-            }
-        }
-    }
-
     .copyright {
         text-align: center;
         margin-top: 20px;
@@ -72,14 +61,11 @@ footer {
         p {
             margin: 0;
             color: #939292;
-            font-size: 14px;
+            font-size: 13px;
         }
     }
-
     hr{
         max-width: 80%;
         margin: 0 auto;
     }
-
-
 }

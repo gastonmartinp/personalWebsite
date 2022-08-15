@@ -22,10 +22,18 @@
 @media (max-width: 768px) {
     .experiences {
         .wrapper{
-            display: block;
+            flex-direction: column;
         }
         .margin-bot{
             margin-bottom: 2px;
+        }
+    }
+}
+
+@media (max-width: 768px){
+    p{
+        .normalText{
+        width: 200px;
         }
     }
 }
