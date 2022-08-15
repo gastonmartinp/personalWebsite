@@ -14,30 +14,30 @@
     @include flexbox(row,flex-start,flex-end)
 }
 
-.card-works{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin: 0 auto;
-    width: 70vw;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-    
-}
-    .copy{
-        background-size:contain;
-        background-position: center;
-        background-repeat: no-repeat;
-        height: 8rem;   
+.works {
+    &__card {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 0 auto;
+        width: 70vw;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        
+        &--copy {
+            background-size:contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 8rem;  
+        }
+
+        &--copy:hover{
+            transform: scale(1.1,1.1);
+        }
+        a.fill-div {
+            display: block;
+            height: 100%;
+            width: 100%;
+            text-decoration: none;
+        }
     }
-
-    .copy:hover{
-        transform: scale(1.1,1.1);
-    }
-
-
-a.fill-div {
-    display: block;
-    height: 100%;
-    width: 100%;
-    text-decoration: none;
 }

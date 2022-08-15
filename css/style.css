@@ -101,28 +101,25 @@ footer {
   justify-content: flex-start;
   align-items: flex-end; }
 
-.card-works {
+.works__card {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   margin: 0 auto;
   width: 70vw;
   padding-top: 3rem;
   padding-bottom: 3rem; }
-
-.copy {
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 8rem; }
-
-.copy:hover {
-  transform: scale(1.1, 1.1); }
-
-a.fill-div {
-  display: block;
-  height: 100%;
-  width: 100%;
-  text-decoration: none; }
+  .works__card--copy {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 8rem; }
+  .works__card--copy:hover {
+    transform: scale(1.1, 1.1); }
+  .works__card a.fill-div {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none; }
 
 /*---DIVIDERS---*/
 hr {
