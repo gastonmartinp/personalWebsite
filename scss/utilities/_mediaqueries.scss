@@ -1,5 +1,7 @@
 /*---------MEDIA QUERY---------*/
 
+
+//descripción grande
 @media only screen and (max-width: 768px) {
     .wrapper {
         display: block;
@@ -9,7 +11,7 @@
     }
 
     .bigDescription {
-        font-size: 10px;
+        font-size: 2rem;
     }
 
     .copy{
@@ -19,8 +21,11 @@
     }   
 }
 
-@media (max-width: 768px) {
+//experiences + contadores para mobile
+@media only screen and (max-width: 768px){
     .experiences {
+        display: grid;
+        grid-template-columns: auto;
         .wrapper{
             flex-direction: column;
         }
@@ -30,10 +35,45 @@
     }
 }
 
-@media (max-width: 768px){
-    p{
-        .normalText{
-        width: 200px;
+//logos de trabajos
+@media only screen and (max-width: 768px){
+    .works{
+        &__card{
+            display: grid;
+            grid-template-columns: auto;
+            gap: 2rem;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
+    }
+}
+
+
+//texto chico de la home
+@media only screen and (max-width: 768px){
+   .main.p.normalText{
+    max-width: 20px;
+   }
+}
+
+//footer
+@media only screen and (max-width:768px) {
+    footer{
+        .container{
+            display: flex;
+            flex-direction: column;
+            --bs-gutter-x:3rem;
+            &__box{
+                h2{
+                    font-weight: 500;
+                }
+                a{
+                    font-size: 18px;
+                }
+                &--terms{
+                    max-width: 300px;
+                }
+            }
         }
     }
 }

@@ -128,35 +128,13 @@ hr {
   margin-top: 50px;
   margin-bottom: 50px; }
 
-/*---------MEDIA QUERY---------*/
-@media only screen and (max-width: 768px) {
-  .wrapper {
-    display: block; }
-  .margin-bot {
-    margin-bottom: 2px; }
-  .bigDescription {
-    font-size: 10px; }
-  .copy {
-    display: grid;
-    grid-template-columns: 1fr; } }
-
-@media (max-width: 768px) {
-  .experiences .wrapper {
-    flex-direction: column; }
-  .experiences .margin-bot {
-    margin-bottom: 2px; } }
-
-@media (max-width: 768px) {
-  p .normalText, p .normalText--v2 {
-    width: 200px; } }
-
+/*  --------BODY---------  */
 * {
   margin: 0;
   padding: 0;
   box-sizing: content-box;
   font-family: 'Roboto', sans-serif; }
 
-/*  --------BODY---------  */
 body {
   line-height: 1.2;
   background-color: #e8e8e8; }
@@ -192,7 +170,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   margin-top: 20px;
   margin-bottom: 20px;
-  width: 500px; }
+  max-width: 500px; }
 
 .normalText--v2 {
   font-size: 16px; }
@@ -200,21 +178,6 @@ body {
 .img-fluid:hover {
   border: solid 2px #000000;
   transform: scale(1.1, 1.1); }
-
-/* animation */
-.typed-words {
-  font-size: 20px; }
-
-.animacion {
-  font-size: medium;
-  /* name */
-  animation-name: ContactMe;
-  /* veces que se ejecuta */
-  animation-iteration-count: infinite;
-  /* Duration */
-  animation-duration: 4s;
-  /* Delay */
-  animation-delay: 1s; }
 
 .experiences {
   display: grid;
@@ -239,6 +202,21 @@ body {
       font-weight: 400;
       line-height: 2.5; }
 
+/*------ANIMACIONES--------*/
+.typed-words {
+  font-size: 20px; }
+
+.animacion {
+  font-size: medium;
+  /* name */
+  animation-name: ContactMe;
+  /* veces que se ejecuta */
+  animation-iteration-count: infinite;
+  /* Duration */
+  animation-duration: 4s;
+  /* Delay */
+  animation-delay: 1s; }
+
 @keyframes ContactMe {
   0% {
     color: #000000; }
@@ -250,3 +228,48 @@ body {
     color: #111C7C; }
   100% {
     color: #000000; } }
+
+/*---------MEDIA QUERY---------*/
+@media only screen and (max-width: 768px) {
+  .wrapper {
+    display: block; }
+  .margin-bot {
+    margin-bottom: 2px; }
+  .bigDescription {
+    font-size: 2rem; }
+  .copy {
+    display: grid;
+    grid-template-columns: 1fr; } }
+
+@media only screen and (max-width: 768px) {
+  .experiences {
+    display: grid;
+    grid-template-columns: auto; }
+    .experiences .wrapper {
+      flex-direction: column; }
+    .experiences .margin-bot {
+      margin-bottom: 2px; } }
+
+@media only screen and (max-width: 768px) {
+  .works__card {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem; } }
+
+@media only screen and (max-width: 768px) {
+  .main.p.normalText, .main.p.normalText--v2 {
+    max-width: 20px; } }
+
+@media only screen and (max-width: 768px) {
+  footer .container {
+    display: flex;
+    flex-direction: column;
+    --bs-gutter-x:3rem; }
+    footer .container__box h2 {
+      font-weight: 500; }
+    footer .container__box a {
+      font-size: 18px; }
+    footer .container__box--terms {
+      max-width: 300px; } }
